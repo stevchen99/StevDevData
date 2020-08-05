@@ -1,0 +1,30 @@
+{
+  "env": {
+    "DB_NAME": "@my-db-name",
+    "MONGODB_URL": "@my-mongodb-url"
+  },
+  "builds": [
+    { "src": "*.js", "use": "@now/node" }
+],
+
+  "routes": [
+    {
+      "src": "/testing",
+      "dest": "/testing.html"
+     
+    },
+    {
+      "src": "/difuse",
+      "dest": "/difuse.html"
+     
+    },
+    {
+      "src": "/",
+      "dest": "/index.html"
+     
+    }
+  ]
+  
+  
+  
+}
